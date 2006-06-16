@@ -1,0 +1,5 @@
+category: Gnome
+requires: cygwin gtkmm24 libglademm24
+sdesc: "Menstrual cycle and fertility prediction calendar"
+ldesc: "Periodic Calendar is a GUI utility which assists in women menstrual
+cycles tracking and fertility periods prediction."
