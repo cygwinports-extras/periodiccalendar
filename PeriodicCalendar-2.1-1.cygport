@@ -1,0 +1,5 @@
+inherit gnome2
+
+DESCRIPTION="Menstrual cycle and fertility period calendar"
+HOMEPAGE="http://linuxorg.sourceforge.net/"
+SRC_URI="mirror://sourceforge/linuxorg/${P}.tar.bz2"
