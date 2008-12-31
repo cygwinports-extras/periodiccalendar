@@ -3,3 +3,11 @@ inherit gnome2
 DESCRIPTION="Menstrual cycle and fertility period calendar"
 HOMEPAGE="http://linuxorg.sourceforge.net/"
 SRC_URI="mirror://sourceforge/linuxorg/${P}.tar.bz2"
+PATCH_URI="
+	2.2-glib-gettext.patch
+	2.2-snprintf.patch
+"
+
+DIFF_EXCLUDES="m4 po"
+
+MAKEOPTS+=" pcalendardocdir=/usr/share/doc/${P}"

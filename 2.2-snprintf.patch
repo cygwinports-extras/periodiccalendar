@@ -1,0 +1,20 @@
+--- origsrc/PeriodicCalendar-2.2/src/graphwidget.cpp	2005-11-07 14:22:15.000000000 -0600
++++ src/PeriodicCalendar-2.2/src/graphwidget.cpp	2008-12-30 13:53:27.487500000 -0600
+@@ -163,7 +163,7 @@
+                                (real_pos - master->get_start_x())
+                                *scale_x));
+         while(linepos <= (wWidth - inset_x - 20)) {
+-            std::snprintf(label_buf, 9, axe_x_label_format.c_str(), real_pos);
++            ::snprintf(label_buf, 9, axe_x_label_format.c_str(), real_pos);
+             pangolayout->set_text(Glib::ustring(label_buf));
+             int text_w, text_h;
+             pangolayout->get_pixel_size(text_w, text_h);
+@@ -185,7 +185,7 @@
+                                (real_pos - master->get_start_y())
+                                *scale_y));
+         while(linepos >= inset_y) {
+-            std::snprintf(label_buf, 9, axe_x_label_format.c_str(), real_pos);
++            ::snprintf(label_buf, 9, axe_x_label_format.c_str(), real_pos);
+             pangolayout->set_text(Glib::ustring(label_buf));
+             window->draw_layout(gc, 
+                                 inset_x + 2,
